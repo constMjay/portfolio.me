@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap");
+@import "./variable";
+
+$font-family-base: "Poppins";
+$body-bg: $blackColor;
+$body-color: $grayColor;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  color: $grayColor;
+}
+a {
+  text-decoration: none;
+}
+// Class Helper
+.accentText {
+  color: $pushaColor;
+}
+.accentOpacity {
+  opacity: 0.5;
+}
+@import "../bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,98 @@
+@import "../mixins";
+@import "../variable";
+
+.main {
+  .container {
+    .contactForm {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__title {
+          h1 {
+            text-align: center;
+            margin: 3.25rem 0 1rem 0;
+            @include breakpoint(medium) {
+              font-size: 2rem;
+            }
+            @include breakpoint(small) {
+              font-size: 1.75rem;
+            }
+          }
+        }
+        &__text {
+          max-width: 700px;
+          width: 100%;
+          p {
+            text-align: center;
+            margin: 1.75rem 0 0 0;
+          }
+        }
+      }
+      &__form {
+        max-width: 390px;
+        width: 100%;
+        margin: 3.75rem auto 0;
+        @include breakpoint(small) {
+          margin: 2rem auto 0;
+          width: 90%;
+        }
+        .error {
+          background-color: $grayColor;
+          color: $pushaColor;
+          padding: 0.2rem;
+          margin: 0 0 0.5rem 0;
+          border: none;
+          outline: none;
+        }
+        form {
+          .form-group {
+            position: relative;
+            .inputIcon {
+              position: absolute;
+              top: 50%;
+              left: 5%;
+              transform: translate(-50%, -50%);
+
+              &__item {
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+              }
+            }
+            .inputForm {
+              width: 100%;
+              padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+              background-color: transparent;
+              outline: none;
+              border: none;
+              border-bottom: 2px solid $grayColor;
+              border-left: 1px solid $grayColor;
+              color: $grayColor;
+              opacity: $opacity;
+            }
+          }
+          .btnContainer {
+            &.hide {
+              visibility: hidden;
+            }
+            .btnSend {
+              max-width: 125px;
+              width: 100%;
+              padding: 0.5rem 0.5rem;
+              background-color: $pushaColor;
+              border: none;
+              color: $grayColor;
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

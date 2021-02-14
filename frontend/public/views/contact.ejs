@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Web Developer</title>
+    <!-- Website Favicon -->
+    <link rel="icon" type="image/png" href="images/logo-favicon.png" />
+    <!-- Bootsrap Sass -->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="/">
+            <img src="images/my-logo.png" alt="My-logo" />
+          </a>
+        </div>
+        <div class="nav-icon">
+          <div class="nav-icon__line"></div>
+          <div class="nav-icon__line"></div>
+          <div class="nav-icon__line"></div>
+        </div>
+        <ul class="nav-menu">
+          <div class="nav-menu__list">
+            <li class="nav-menu__list__item">
+              <a href="/">HOME</a>
+            </li>
+            <li class="nav-menu__list__item">
+              <a href="/about">ABOUT</a>
+            </li>
+            <li class="nav-menu__list__item">
+              <a href="/project">PORTFOLIO</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="contactForm">
+          <div class="contactForm__intro">
+            <div class="contactForm__intro__title">
+              <h1 class="accentOpacity">Let's make something for you.</h1>
+            </div>
+            <div class="contactForm__intro__text">
+              <p>
+                <span class="accentOpacity">
+                  Fill up the form if you want to build a website for your
+                  business or contact me via email
+                </span>
+                <span class="accentText">arjay6021@gmail.com</span>
+                <span class="accentOpacity"> and let's talk about it. </span>
+              </p>
+            </div>
+          </div>
+          <div class="contactForm__form">
+            <form id="myForm">
+              <div class="form-group">
+                <div class="inputIcon">
+                  <label for="fullname">
+                    <img
+                      src="images/user-solid.png"
+                      alt="User Input Icon"
+                      class="inputIcon__item"
+                    />
+                  </label>
+                </div>
+                <input
+                  type="text"
+                  name="fullname"
+                  class="inputForm"
+                  id="fullname"
+                  placeholder="Enter your fullname..."
+                />
+              </div>
+              <div class="form-group">
+                <div class="inputIcon">
+                  <label for="email">
+                    <img
+                      src="images/envelope-solid.png"
+                      alt="Envelope Input Icon"
+                      class="inputIcon__item"
+                    />
+                  </label>
+                </div>
+                <input
+                  type="email"
+                  name="email"
+                  class="inputForm"
+                  id="email"
+                  placeholder="Enter your email..."
+                />
+              </div>
+              <div class="btnContainer">
+                <button type="submit" class="btnSend">
+                  <span class="accentOpacity">SEND</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <!-- Javascript Script -->
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/app.js"></script>
+</html>

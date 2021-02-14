@@ -1,0 +1,33 @@
+@import "../mixins";
+@import "../variable";
+
+.main {
+  .container {
+    .intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 70vh;
+      @include breakpoint(small) {
+        height: 75vh;
+      }
+      &__title {
+        h1 {
+          text-align: center;
+          opacity: $opacity;
+          margin-bottom: 1rem;
+          @include breakpoint(small) {
+            font-size: 2rem;
+          }
+        }
+      }
+      &__text {
+        text-align: center;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import "../mixins";
+@import "../variable";
+footer {
+  .container {
+    .footer-content {
+      display: grid;
+      place-items: center;
+      .footer-info {
+        p {
+          opacity: $opacity;
+          font-size: 0.9rem;
+          font-weight: 300;
+          letter-spacing: 3px;
+        }
+      }
+      .social-connect {
+        display: flex;
+
+        &__icon {
+          a {
+            img {
+              width: 30px;
+              height: 30px;
+              color: $grayColor;
+              opacity: $opacity;
+            }
+          }
+        }
+        &__icon:nth-child(1) {
+          margin: 0 1.56rem 0 0;
+        }
+        &__icon:nth-child(2) {
+          margin: 0 1.56rem 0 0;
+        }
+      }
+    }
+  }
+}
